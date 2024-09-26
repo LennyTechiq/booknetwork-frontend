@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from './components/common/Navbar';
+import HomePage from './components/pages/HomePage';
 import LoginPage from './components/auth/LoginPage';
 import RegistrationPage from './components/auth/RegistrationPage';
 import FooterComponent from './components/common/Footer';
@@ -21,7 +22,7 @@ function App() {
         <Navbar />
         <div className="content">
           <Routes>
-            <Route exact path="/" element={<LoginPage />} />
+            <Route exact path="/" element={<HomePage />} />
             <Route exact path="/login" element={<LoginPage />} />
             <Route path="/profile" element={<ProfilePage />} />
 
